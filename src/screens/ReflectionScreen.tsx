@@ -116,14 +116,20 @@ export const ReflectionScreen: React.FC<ReflectionScreenProps> = ({
         </div>
 
         {/* Reassuring response after answer */}
-        {selectedAnswer && (
-          <div className="mt-2.5 p-2 bg-[#FAF2E9]/90 rounded-xl border border-[#AD6354]/25 text-center animate-in fade-in duration-300">
-            <p className="font-serif-tc text-[11px] text-[#6C271B]">
-              「慢慢來，你已經比剛才更靠近自己的心了。」
-            </p>
-          </div>
-        )}
-      </div>
+{selectedAnswer && (
+  <div className="mt-2.5 p-2 bg-[#FAF2E9]/90 rounded-xl border border-[#AD6354]/25 text-center animate-in fade-in duration-300">
+    <p className="font-serif-tc text-[11px] text-[#6C271B]">
+      {selectedAnswer === 'a_little' &&
+        '「很好，帶著這份輕盈，慢慢向前走吧。」'}
+
+      {selectedAnswer === 'same' &&
+        '「沒關係，有些心事需要一點時間，慢慢來就好。」'}
+
+      {selectedAnswer === 'not_sure' &&
+        '「不必急著找到答案，先好好感受此刻的自己。」'}
+    </p>
+  </div>
+)}
 
       {/* BOTTOM ACTION BUTTON */}
       <div className="relative z-10 w-full max-w-xs flex-shrink-0 pb-2 px-4 flex flex-col items-center">
