@@ -1,0 +1,6 @@
+{
+  "name": "月下心弦 — Love Threads",
+  "description": "An interactive Yue Lao temple experience helping visitors facing relationship uncertainty feel heard and less alone through connected moonlights and sacred red threads.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
