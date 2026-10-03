@@ -119,7 +119,7 @@ export const ReflectionScreen: React.FC<ReflectionScreenProps> = ({
         {selectedAnswer && (
           <div className="mt-2.5 p-2 bg-[#FAF2E9]/90 rounded-xl border border-[#AD6354]/25 text-center animate-in fade-in duration-300">
             <p className="font-serif-tc text-[11px] text-[#6C271B]">
-              「無論答案是什麼，月老都已聽見你的問句。」
+              「慢慢來，你已經比剛才更靠近自己的心了。」
             </p>
           </div>
         )}
